@@ -9,6 +9,7 @@ VisuLang is officially pronounced as **/vɪʒuˈləŋ/** (*Vî-jú-LĂNG*).
 
 ## ✨ Key Features
 * **Dual-Nature Syntax**: Can be used as a high-level visual/scripting engine or extended into low-level hardware control depending on the file extension.
+* **Variable Declaration**: Variables are created sequentially using the `var` keyword followed by the assignment operator (e.g., `var score = 100`).
 * **Modular Extensions**: Modules are imported on demand using a clean syntax (e.g., `import Sys, UI`).
 * **Top-Level Execution**: No boilerplate! Scripts can run sequentially from top to bottom without mandatory function wrappers.
 
@@ -34,7 +35,10 @@ UI.space(20)
 
 UI.button("Reveal Who Entered", function() {
     Sys.print_raw("Triggering Deja-Vu Algorithm resolution.")
-    UI.show_dialog("Deja-Vu Answer", "It was the Algorithm E!")
+    
+    // Declaring the answer using the official variable syntax
+    var answer = "E"
+    UI.show_dialog("Deja-Vu Answer", "It was the Algorithm " + answer + "!")
 })
 
 UI.render()
