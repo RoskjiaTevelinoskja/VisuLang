@@ -1,0 +1,38 @@
+/- 
+  Official VisuLang Example Code
+  Created by: Roskjin Tevelinoskja
+  Features: Variables, loops, custom definitions, block comments, and UI.
+-/
+
+import Sys, UI
+
+/- Declaring variables using the official syntax -/
+var battery = 100
+var running = true
+
+/- Defining a custom function using define, parentheses, and colon -/
+define check_system_status():
+    if battery === 20:
+        UI.show_dialog("Warning", "Battery is running low!")
+    elif battery === 0:
+        Sys.print_raw("Battery dead. Shutting down system.")
+        break /- Uses break to stop the loop -/
+
+/- Starting the application interface -/
+UI.window("VisuLang OS", 450, 700)
+UI.text("Welcome to the first VisuLang multiplatform app!")
+UI.space(15)
+
+/- Creating an interactive button that triggers the Deja-Vu Riddle -/
+UI.button("Solve the Deja-Vu Riddle"):
+    var answer = "E"
+    UI.show_dialog("Riddle Answer", "It was the Algorithm " + answer + "!")
+
+/- Main application execution loop -/
+while running === true:
+    check_system_status()
+    battery = battery - 1 /- Decreasing the variable value using '-' -/
+    Sys.delay(1000) /- Pauses execution for 1 second -/
+
+      UI.render()
+      
