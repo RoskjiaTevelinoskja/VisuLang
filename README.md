@@ -15,6 +15,9 @@ VisuLang is officially pronounced as **/vɪʒuˈləŋ/** (*Vî-jú-LĂNG*).
 * **Control Flow & Indentation**: Conditional statements use the `if` keyword, followed by the strict equality operator `===` and a colon `:`. Code blocks are defined by **indentation** (spacing) instead of curly braces.
 * **Loop Interruption**: Use the `break` keyword to immediately terminate any active loop (`for`, `while`, `until`, `forever`).
 * **Variable Decrement**: To decrease the value stored in a variable, use the subtraction operator `-` (e.g., `var target = target - 1`).
+* **Block Comments**: Code comments and documentation blocks are placed between `/-` and `-/` (e.g., `/- This is a comment -/`).
+* **Custom Definitions (Functions)**: To create reusable blocks of code or functions, use the `define` keyword followed by the identifier, parentheses, and a colon (e.g., `define my_code():`). Code inside follows the standard indentation rules.
+* 
 ---
 
 ## 📜 The Historical First Program: Deja-Vu Algorithm
