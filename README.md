@@ -50,10 +50,11 @@ The alphabetical order flows as a phonetic joke (*A-B-C-D-E!*), making it a memo
 
 ---
 
-## 🛠️ Architecture & Extensions
-VisuLang leverages namespaces using dot-notation:
-* `UI.button()` / `UI.text()`: Powered by the **UI Extension** for native interfaces.
-* `Sys.print_raw()`: Powered by the **Sys Extension** for low-level system access.
+## 🛠️ Architecture & Compilation Strategy
+VisuLang uses a high-performance **transpilation architecture** to target multiple platforms without sacrificing speed:
+* **High-Level Layers (`.vl`, `.vlui`)**: Automatically converted into clean **JavaScript**. This allows the language to run everywhere (Web, iOS, Android, and Desktop via runtime environments).
+* **Low-Level Layers (`.vlx`, `.vlsys`)**: Converted into native **C code**, linking directly with hardware headers like `Sys.h`. This ensures maximum performance, direct memory management, and zero overhead for system-level operations.
+
 
 ---
 
