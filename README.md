@@ -12,6 +12,7 @@ VisuLang is officially pronounced as **/vɪʒuˈləŋ/** (*Vî-jú-LĂNG*).
 * **Variable Declaration**: Variables are created sequentially using the `var` keyword followed by the assignment operator (e.g., `var score = 100`).
 * **Modular Extensions**: Modules are imported on demand using a clean syntax (e.g., `import Sys, UI`).
 * **Top-Level Execution**: No boilerplate! Scripts can run sequentially from top to bottom without mandatory function wrappers.
+* **Control Flow & Indentation**: Conditional statements use the `if` keyword, followed by the strict equality operator `===` and a colon `:`. Code blocks are defined by **indentation** (spacing) instead of curly braces.
 
 ---
 
